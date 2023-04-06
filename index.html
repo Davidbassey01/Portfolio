@@ -1,20 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <title>Bassey Portfolio</title>
-</head>
-<body>
-    <section class="section">
-        <header>
-            
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bassey David Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/b360354e24.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <img src="./Images/logo.png" alt="logo" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Web Designer/Developer</p>
+          <h1>
+            Hi, I'm <span>Bassey</span><br />
+            David From Nigeria
+          </h1>
+        </div>
+      </div>
+    </header>
+    <!---------------- About ---------------->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./Images/user.png" alt="Bassey" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est nemo
+              rem ullam eveniet, cumque facilis! Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Soluta culpa, architecto enim omnis,
+              id voluptatibus voluptas maiores velit earum, assumenda
+              voluptatem. Quae labore ipsam dignissimos enim! Eaque dolorum hic
+              aut quo. Laudantium voluptas id nobis.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Design</span><br />Designing Websites</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+              </ul>
+            </div>
+            <div class="tab-contents " id="experience">
+              <ul>
+                <li><span>2022 - Current</span><br />Web Designing</li>
+                <li><span>2019</span><br />Team Lead at Mechanical Engineering-Pyrolysis Reactor Project</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023 - 2024</span><br />FrontEnd Developer at FreeCodeCamp</li>
+                <li><span>2023 - 2024</span><br />CSS Certificate at W3 Schools</li>
+                <li><span>2016 - 2023</span><br />B.Eng Mechanical Engineering at FUPRE</li>
+                <li><span>2023</span><br />UI/UX Training at DYEN Institute</li>
+                <li><span>2022</span><br />Web Design Training at DYEN Institute</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-</body>
+
+    <!-- --------------services-------------- -->
+    <section id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, recusandae! Aliquid mollitia laudantium, modi atque optio, cupiditate repudiandae temporibus porro, distinctio neque blanditiis voluptatum quae velit perferendis libero cum nulla debitis officia! Eaque, quibusdam repudiandae?</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, recusandae! Aliquid mollitia laudantium, modi atque optio, cupiditate repudiandae temporibus porro, distinctio neque blanditiis voluptatum quae velit perferendis libero cum nulla debitis officia! Eaque, quibusdam repudiandae?</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, recusandae! Aliquid mollitia laudantium, modi atque optio, cupiditate repudiandae temporibus porro, distinctio neque blanditiis voluptatum quae velit perferendis libero cum nulla debitis officia! Eaque, quibusdam repudiandae?</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-regular fa-font-awesome"></i>
+            <h2>Logo Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, recusandae! Aliquid mollitia laudantium, modi atque optio, cupiditate repudiandae temporibus porro, distinctio neque blanditiis voluptatum quae velit perferendis libero cum nulla debitis officia! Eaque, quibusdam repudiandae?</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------portfolio----------------- -->
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./Images/work-1.png" alt="work-1">
+          </div>
+          <div class="work">
+            <img src="./Images/work-2.png" alt="work-1">
+          </div>
+          <div class="work">
+            <img src="./Images/work-3.png" alt="work-1">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+          
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+          
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+      }
+    </script>
+  </body>
 </html>
